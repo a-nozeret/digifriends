@@ -1,0 +1,15 @@
+// Main container
+.c-main {
+    height: calc(100vh - 20vw - 60px);
+    min-height: 60vh;
+    display: block;
+
+    .o-loading-icon {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: calc(50% - 10vw);
+        font-size: 20vw;
+        z-index: 10;
+    }
+}

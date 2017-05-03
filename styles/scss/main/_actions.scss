@@ -1,0 +1,55 @@
+// Actions bar in main container
+.c-main {
+    .c-new-query {
+        width: 100vw;
+        overflow: hidden;
+        background-color: $c-accent;
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+
+        &__label {
+            line-height: 30px;
+            margin-left: 10px;
+            width: 150px;
+            .fa-arrow-right {
+                font-weight: 100;
+                margin-left: 10px;
+                font-size: 12px;
+            }
+        }
+
+        input {
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+            background-color: transparent;
+            border: none;
+            padding-left: 10px;
+            cursor: pointer;
+            color: $c-neutral--dark;
+        }
+
+        &__input {
+            text-align: center;
+            border-right: 1px solid #455a64 !important;
+            flex-grow: 1;
+            width: 40%;
+        }
+
+        &__button {
+            flex: 1 0 50%;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+
+        .c-query {
+            color: $c-accent;
+            background-color: $c-neutral--dark;
+            width: 50vw;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+}

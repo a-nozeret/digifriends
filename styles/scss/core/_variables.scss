@@ -1,0 +1,34 @@
+// -- Colors --
+$blueGrey100 : #CFD8DC;
+$blueGrey500 : #607D8B;
+$blueGrey700 : #455A64;
+
+$grey50   : #FAFAFA;
+$grey500  : #9E9E9E;
+$grey900  : #212121;
+
+$tealA100  : #B9F6CA;
+$tealA200  : #69F0AE;
+$tealA400  : #00E676;
+
+// -- Colors / Neutral
+$c-neutral        : $grey500;
+$c-neutral--light : $grey50;
+$c-neutral--dark  : $grey900;
+
+// -- Colors / Primary
+$c-primary        : $blueGrey500;
+$c-primary--light : $blueGrey100;
+$c-primary--dark  : $blueGrey700;
+
+// -- Colors / Accent
+$c-accent        : $tealA200;
+$c-accent--light : $tealA100;
+$c-accent--dark  : $tealA400;
+
+// -- Fonts --
+$f-fallback--primary : Verdana, Geneva, sans-serif;
+$f-fallback--accent  : Georgia, serif;
+
+$f-primary : 'Open Sans', sans-serif, $f-fallback--primary;
+$f-accent  : 'Droid+Serif', serif, $f-fallback--accent;

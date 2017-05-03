@@ -1,0 +1,36 @@
+body {
+    color: $c-neutral__dark;
+    font-family: $f-primary;
+    font-size: 1rem;
+
+    .cf {
+        clear: both;
+        display: table;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+
+// User select
+html {
+    ::selection {
+        background-color: black;
+        color: white;
+        text-shadow: none !important;
+    }
+}
+
+// Breakpoints
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}

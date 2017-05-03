@@ -1,0 +1,22 @@
+// Main header
+.c-header {
+    background-color: $c-neutral__light;
+    text-align: center;
+    padding: 20px 10px 40px;
+    height: 20vw;
+
+    &__title {
+        font-size: 15vw;
+        font-weight: 900;
+    }
+
+    &__sub-title {
+        letter-spacing: 2px;
+        max-width: 75vw;
+        margin: auto;
+        text-align: right;
+        font-size: 3vw;
+        color: #7d7d7d;
+        font-weight: 900;
+    }
+}

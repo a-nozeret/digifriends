@@ -1,0 +1,25 @@
+// Core
+@import "core/lib/font-awesome.min";
+@import "core/reset";
+@import "core/variables";
+@import "core";
+
+// Components
+@import "header";
+@import "main";
+@import "main/actions";
+@import "main/selected";
+@import "main/previous";
+
+body {
+    background-color: $c-primary--dark;
+
+    .o-loading-icon {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: calc(50% - 10vw);
+        font-size: 20vw;
+        z-index: 10;
+    }
+}

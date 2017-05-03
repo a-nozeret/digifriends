@@ -1,0 +1,17 @@
+{
+  "name": "digifriends",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Digifriends challenge",
+  "author": "Antoine Nozeret",
+  "license": "ISC",
+  "main": "index.php",
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "sass": "node-sass --include-path scss styles/scss/app.scss styles/app.css",
+    "sass-watch": "nodemon -e scss -x \"npm run sass\""
+  }
+}
