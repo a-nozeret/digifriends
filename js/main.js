@@ -45,7 +45,13 @@ let MainApp = React.createClass({
         $('.c-new-query__input').focus();
         $('body').removeClass('loading');
         if (this.state.selectedValue !== null) {
-            this.selectQuery();
+            this.resetList(function (q) {
+                // Select the latest query if there is one
+                if (q.length > 0) {
+                    this.state.selectedValue = q[0].value;
+                    this.selectQuery();
+                }
+            }.bind(this));
         }
     },
 
@@ -78,15 +84,11 @@ let MainApp = React.createClass({
     },
 
     // Actions
-    resetList: function () {
+    resetList: function (callback) {
         this.serverRequest = $.get("api/list.php", function (queries) {
             this.setState({ queries: queries });
+            callback = callback ? callback(queries): '';
 
-            // Select the latest query if there is one
-            if (queries.length > 0) {
-                this.state.selectedValue = queries[0].value;
-                this.selectQuery();
-            }
         }.bind(this));
     },
     onPreviousQueryClick: function (e) {
@@ -102,7 +104,6 @@ let MainApp = React.createClass({
             { selected_value: this.state.selectedValue },
             function (data) {
                 if (data && data.query.length > 0) {
-                    this.setState({selectedValue: data.query[0].value});
                     this.setState({digifriends: data.digifriends});
                 }
             }.bind(this)
