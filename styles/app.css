@@ -2282,9 +2282,16 @@ html ::selection {
   text-align: center;
   padding: 20px 10px 40px;
   height: 20vw; }
+  @media (min-width: 900px) {
+    .c-header {
+      font-size: 20vh;
+      min-height: 14vw; } }
   .c-header__title {
     font-size: 15vw;
     font-weight: 900; }
+    @media (min-width: 900px) {
+      .c-header__title {
+        font-size: 135px; } }
   .c-header__sub-title {
     letter-spacing: 2px;
     max-width: 75vw;
@@ -2466,7 +2473,8 @@ html ::selection {
       opacity: 1; }
 
 body {
-  background-color: #455A64; }
+  background-color: #455A64;
+  overflow: hidden; }
   body .o-loading-icon {
     position: absolute;
     color: white;

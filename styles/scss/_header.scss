@@ -5,9 +5,17 @@
     padding: 20px 10px 40px;
     height: 20vw;
 
+    @include desktop {
+        font-size: 20vh;
+        min-height: 14vw;
+    }
+
     &__title {
         font-size: 15vw;
         font-weight: 900;
+        @include desktop {
+            font-size: 135px;
+        }
     }
 
     &__sub-title {

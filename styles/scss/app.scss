@@ -13,6 +13,7 @@
 
 body {
     background-color: $c-primary--dark;
+    overflow: hidden;
 
     .o-loading-icon {
         position: absolute;

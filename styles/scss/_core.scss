@@ -25,12 +25,12 @@ html {
 
 // Breakpoints
 @mixin mobile {
-    @media (max-width: 767px) {
+    @media (max-width: 900px) {
         @content;
     }
 }
 @mixin desktop {
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
         @content;
     }
 }
