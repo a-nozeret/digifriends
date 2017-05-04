@@ -13,6 +13,8 @@ The number of Digifriends of X is always smaller than or equal to X, so there is
 As a user, I want to insert a number so that its Digifriends are computed and saved in the database for later look up. The Digifriends for the number selected are then displayed.
 
 ## The app
+![Demo](https://github.com/a-nozeret/digifriends/blob/master/demo.gif?raw=true)
+
 ### Tools and technologies used
 **ReactJS** app styled with **SCSS** compiled with **npm scripts**. Backend and **API** written in **PHP** accessing a **MySQL** database with PDO.
 
