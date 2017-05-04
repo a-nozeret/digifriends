@@ -2418,7 +2418,7 @@ html ::selection {
 
 .c-queries {
   color: #FAFAFA;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -2473,8 +2473,7 @@ html ::selection {
       opacity: 1; }
 
 body {
-  background-color: #455A64;
-  overflow: hidden; }
+  background-color: #455A64; }
   body .o-loading-icon {
     position: absolute;
     color: white;
